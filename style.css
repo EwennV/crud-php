@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+}
+
+.navbar .app-name {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+}
+
+#content {
+    padding: 20px 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box .todo {
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    padding: 0.2rem;
+}
+
+button.form-control {
+    width: fit-content;
+    padding: 10px;
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+@media (min-width: 560px) {
+    .box {
+        width: 90%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .box {
+        width: 20%;
+    }
+
+    .box .todo {
+        width: 30%;
+    }
+}
